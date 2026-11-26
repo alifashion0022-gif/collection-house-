@@ -55,7 +55,7 @@ footer{background:#24242c;color:#ddd;padding:30px 20px;text-align:center;font-si
 <div class="overlay" id="orderModal"><div class="panel"><button class="close" onclick="hide('orderModal')">×</button><h2>অর্ডার করুন</h2><div id="orderProduct" style="margin-bottom:12px;font-weight:700"></div><div class="formgrid"><div class="field"><label>সাইজ *</label><select id="oSize"><option value="">সাইজ নির্বাচন করুন</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></div><div class="field"><label>পরিমাণ *</label><input id="oQty" type="number" min="1" value="1"></div><div class="field full"><label>আপনার নাম *</label><input id="oName"></div><div class="field full"><label>মোবাইল নম্বর *</label><input id="oPhone" inputmode="tel" placeholder="01XXXXXXXXX"></div><div class="field full"><label>জেলা / শহর</label><input id="oDistrict"></div><div class="field full"><label>সম্পূর্ণ ঠিকানা *</label><textarea id="oAddress" rows="2"></textarea></div></div><div class="actions"><button class="secondary" onclick="hide('orderModal')">বাতিল</button><button class="primary" onclick="submitOrder()">অর্ডার নিশ্চিত করুন</button></div><p id="orderStatus" style="font-size:13px"></p></div></div>
 <script>
 const APPS_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
-const SIZE_OPTIONS = ["S","M","L","XL","XXL"];
+const SIZE_OPTIONS = ["S","M","L","XL"];
 let selectedProductId = null;
 const seed=[
 {id:1,name:"Dream Smile Printed T-Shirt",price:399,old:650,category:"Men",stock:20,image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700",desc:"আরামদায়ক কটন টি-শার্ট"},
